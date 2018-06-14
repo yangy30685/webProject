@@ -131,8 +131,8 @@
 		</ul>
 	</div>
 	
-	<a href="javascript:;" class="prev btn"><</a>
-	<a href="javascript:;" class="next btn">></a>
+	<a href="javascript:;" class="prev btn"></a>
+	<a href="javascript:;" class="next btn"></a>
 
 	<div class="buttons">
 		<a href="javascript:;"><span class="blue"></span></a>
@@ -145,7 +145,7 @@
 	</div>
 </div>
 
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 	<script type="text/javascript">
 	var $a=$(".buttons a");
 	var $s=$(".buttons span");
@@ -164,7 +164,7 @@
 	//上一张
 	function previmg(){
 		cArr.unshift(cArr[6]);
-		cArr.pop();
+		icArr.pop();
 		//i是元素的索引，从0开始
 		//e为当前处理的元素
 		//each循环，当前处理的元素移除所有的class，然后添加数组索引i的class
